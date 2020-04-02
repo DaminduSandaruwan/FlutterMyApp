@@ -15,18 +15,22 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
       ),
       body: Center(
-        child: Text(
-          "Hello, Damindu",
-          style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2.0,
-            color: Colors.grey[600],
-            fontFamily: 'IndieFlower',
+        child: Image.asset('assets/img2.jpg'),
+//        child: Image(
+//          image: AssetImage('assets/img3.jpg'),
+//          image: NetworkImage('https://images.unsplash.com/photo-1506598417715-e3c191368ac0?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'),
+//        ),
 
-          ),
-        ),
-
+//        child: Text(
+//          "Hello, Damindu",
+//          style: TextStyle(
+//            fontSize: 20.0,
+//            fontWeight: FontWeight.bold,
+//            letterSpacing: 2.0,
+//            color: Colors.grey[600],
+//            fontFamily: 'IndieFlower',//
+//          ),
+//        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: (){},
