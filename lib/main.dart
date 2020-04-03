@@ -14,20 +14,27 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Padding(
-        padding: EdgeInsets.all(30.0),
-        child:  Text('Hello'),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          Text("Hello World"),
+          RaisedButton.icon(
+            onPressed: (){},
+            icon: Icon(
+                Icons.mail
+            ),
+            label: Text('Mail Me'),
+            color: Colors.amber,
+          ),
+
+          Container(
+            color: Colors.cyan,
+            padding: EdgeInsets.all(30.0),
+            child: Text('Inside Container'),
+          ),
+        ],
       ),
-//      body: Container(
-//        padding: EdgeInsets.fromLTRB(10, 20, 20, 10),
-//        margin: EdgeInsets.all(30.0),
-//
-//
-//   //     padding: EdgeInsets.all(20.0),
-//   //     padding : EdgeInsets.symmetric(horizontal: 30,vertical: 10),
-//        color: Colors.grey[400],
-//        child: Text('Hello'),
-//      ),
 
       floatingActionButton: FloatingActionButton(
         onPressed: (){},
